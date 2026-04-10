@@ -8,7 +8,8 @@
     "scheme": "stockmarketmobileexpo",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.anonymous.stock-market-mobile-expo"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,12 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.CAMERA"
+      ],
+      "package": "com.anonymous.stockmarketmobileexpo"
     },
     "web": {
       "output": "static",
@@ -33,6 +39,14 @@
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 76
           }
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "QuantiX needs access to your camera to scan QR codes for payments.",
+          "recordAudioAndroid": false
         }
       ]
     ],
