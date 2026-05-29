@@ -48,7 +48,10 @@
           "cameraPermission": "QuantiX needs access to your camera to scan QR codes for payments.",
           "recordAudioAndroid": false
         }
-      ]
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,

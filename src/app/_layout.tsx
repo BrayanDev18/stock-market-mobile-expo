@@ -2,7 +2,7 @@ import {Stack} from "expo-router";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
 
 import "../../global.css"
-import '../utils/cssInterop';
+import '@/core/utils/cssInterop';
 
 const AppLayout = () => {
   return (

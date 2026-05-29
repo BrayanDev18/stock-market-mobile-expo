@@ -1,6 +1,7 @@
 import React from 'react';
 import { Pressable, Text } from 'react-native';
 import { BlurView } from 'expo-blur';
+import { Colors } from '@/core/constants';
 
 type Props = {
   label: string;
@@ -25,7 +26,7 @@ export const GlassIconButton = ({
                                   size = 64,
                                   intensity = 100,
                                   tint = 'dark',
-                                  glowColor = '#16a34a',
+                                  glowColor = Colors.accentDim,
                                   glowOpacity = 0.12,
                                   className = '',
                                 }: Props) => {
